@@ -1,6 +1,7 @@
 ﻿// Программа принимает на вход число
 // и выдаёт сумму цифр в числе.
-int InputInt(string name)
+int InputInt(string name) // Функция вводит целое число
+                        // с проверкой на корректность ввода.
 {
     Console.Write($"Введите число {name}: ");
     if (int.TryParse(Console.ReadLine(), out int numberII))
@@ -14,7 +15,7 @@ int InputInt(string name)
     return numberII;
 }
 
-int SumNum(int numberSN)
+int SumNum(int numberSN) // Функция считает сумму цифр в числе.
 {
     int resultSN = 0;
    while ( numberSN >= 9)
