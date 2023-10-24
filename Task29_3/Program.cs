@@ -30,4 +30,3 @@ void PrintArray(int[] PrArr)
 
 int[] array = FillArray();
 PrintArray(array);
-
